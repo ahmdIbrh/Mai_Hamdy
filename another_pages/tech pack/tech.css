@@ -1,0 +1,74 @@
+section.tech-pack {
+    margin: 10rem 0 13.1875rem;
+}
+.second-dress__container,
+.first-dress__container,
+.eleven-mind__container,
+.tech-pack__container,
+.eleven__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13.5rem;
+}
+
+.section__title {
+    text-align: center;
+    margin-bottom: 0;
+}
+.second-dress__container,
+.first-dress__container,
+.eleven-mind__container,
+.eleven__container {
+    gap: 6.5rem;
+}
+.first-dress__container,
+.eleven-mind__container {
+    margin: 5.625rem;
+}
+.second-dress__title,
+.first-dress__title,
+.eleven-mind__title,
+.eleven__title {
+    opacity: .4;
+}
+.second-dress__imgs,
+.first-dress__imgs,
+.eleven-mind__imgs,
+.eleven__imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-inline: 5.625rem;
+    gap: 3.5625rem;
+}
+.first-dress__imgs,
+.eleven-mind__imgs {
+    margin-inline: 0;
+}
+.first-dress__imgs img {
+    height: 100%;
+}
+
+.big-photo,
+.column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+.column:nth-child(2) {
+    gap: 3.125rem;
+}
+
+
+.big-photo {
+    gap: 0;
+    width: 100%;
+}
+.big-photo img {
+    width: 100%;
+}
+
+.second-dress__imgs .column:nth-child(1) img:nth-child(2) {
+    width: 100%;
+    height: 100%;
+}

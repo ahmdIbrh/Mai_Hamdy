@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .arrow {
+        position: relative;
+        width: 37px;
+        height: 37px;
+      }
+      .arrow div {
+        top: 30px;
+        left: 30px;
+        position: absolute;
+        color: white;
+        width: 100%;
+        height: 100%;
+        border-top: 4px solid #dedede;
+        border-right: 4px solid #dedede;
+      }
+      .arrow div::before {
+        content: "";
+        position: absolute;
+        top: 45%;
+        left: -27%;
+        width: calc(100% + 1rem);
+        height: 4px;
+        background: #dedede;
+        transform: rotate(-45deg);
+      }
+
+      .arrow_svg {
+        padding: 3rem;
+      }
+      .arrow_svg svg {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="arrow">
+      <div></div>
+    </div>
+    <div class="arrow_svg">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16.013"
+        height="16.013"
+        viewBox="0 0 16.013 16.013"
+      >
+        <g
+          id="Group_14"
+          data-name="Group 14"
+          transform="translate(-249.767 -275.705)"
+        >
+          <path
+            id="Path_1"
+            data-name="Path 1"
+            d="M250.39,291.718a.622.622,0,0,1-.44-1.062l14.768-14.768a.622.622,0,0,1,1.062.44v12.788a.622.622,0,0,1-1.245,0V277.83L250.83,291.535A.62.62,0,0,1,250.39,291.718Z"
+            transform="translate(0)"
+            fill="#fff"
+          />
+          <path
+            id="Path_2"
+            data-name="Path 2"
+            d="M269.542,276.95H256.754a.622.622,0,0,1,0-1.245h12.788a.622.622,0,0,1,0,1.245Z"
+            transform="translate(-4.384 0)"
+            fill="#fff"
+          />
+        </g>
+      </svg>
+    </div>
+  </body>
+</html>
