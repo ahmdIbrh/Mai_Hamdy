@@ -924,8 +924,8 @@ footer.section {
 .btns .arr div {
   cursor: pointer;
   position: absolute;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   border-top: 4.5px solid #dedede;
   border-left: 4.5px solid #dedede;
   top: 35px;
