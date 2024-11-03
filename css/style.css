@@ -152,10 +152,20 @@ button {
   font-size: var(--logo-font-size);
   font-family: "HeaderFont";
 }
-.nav__toggle,
-.nav__close {
-  font-size: var(--normal-font-size);
-  cursor: pointer;
+.nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0.4rem;
+  right: 0;
+  width: 50%;
+  height: 2px;
+  background-color: white;
+}
+.nav__toggle {
+  width: 1.5rem;
+  height: 2px;
+  background-color: white;
+  position: relative;
   display: none;
 }
 
@@ -228,14 +238,13 @@ button {
   }
   .nav__menu {
     position: fixed;
-    top: 0;
+    top: 12%;
     right: -100%;
     background-color: hsla(240, 1%, 21%, 0.2);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     width: 80%;
-    height: 100%;
-    padding: 7rem 3rem;
+    padding: 1.9rem 3rem;
     transition: right 0.4s;
     font-size: 1rem;
     z-index: 1000;
@@ -243,7 +252,7 @@ button {
   .nav__list {
     font-size: 1.125rem;
     flex-direction: column;
-    row-gap: 3.5rem;
+    row-gap: 1.9rem;
   }
   .nav__link.latest {
     width: 100%;
