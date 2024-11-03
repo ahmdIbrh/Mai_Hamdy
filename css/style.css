@@ -237,8 +237,8 @@ button {
     padding-inline: 1rem;
   }
   .nav__menu {
-    position: fixed;
-    top: 12%;
+    position: absolute;
+    top: 0;
     right: -100%;
     background-color: hsla(240, 1%, 21%, 0.2);
     backdrop-filter: blur(16px);
