@@ -809,10 +809,11 @@ button {
   }
   .container1 button {
     position: absolute;
-    top: 40%;
+    top: 133%;
   }
   .container1 button svg {
     width: 0.5rem;
+    height: 22px;
   }
   .carousel .carousel-item {
     width: 100%;
