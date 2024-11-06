@@ -350,7 +350,7 @@
     <script>
       $(document).ready(function () {
         $(".carousel").carousel({
-          padding: 300,
+          padding: 200,
         });
         $(".left").click(function () {
           $(".carousel").carousel("prev");
@@ -365,6 +365,14 @@
         //   setTimeout(autoplay, 4500);
         // }
       });
+      if (document.body.clientWidth <= 1024) {
+        $(document).ready(function () {
+          $(".carousel").carousel({
+            padding: 200,
+            numVisible: 1,
+          });
+        });
+      }
     </script>
   </body>
 </html>

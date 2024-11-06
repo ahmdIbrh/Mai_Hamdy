@@ -346,6 +346,14 @@
         //   setTimeout(autoplay, 4500);
         // }
       });
+      if (document.body.clientWidth <= 1024) {
+        $(document).ready(function () {
+          $(".carousel").carousel({
+            padding: 200,
+            numVisible: 1,
+          });
+        });
+      }
     </script>
   </body>
 </html>

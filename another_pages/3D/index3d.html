@@ -4,6 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/style.css" />
+    <style>
+      @media screen and (max-width: 1024px) {
+        .container .fashion__title {
+          font-size: min(3rem, 10vw);
+        }
+        .sports__container .imgs img {
+          position: static;
+        }
+        .sports__container .imgs {
+          width: 100%;
+          height: auto;
+          padding: 2rem;
+        }
+        .sports__container h1,
+        .dresses__container h1 {
+          font-size: min(3rem, 8.5vw);
+        }
+        .sports__container h1 {
+          font-size: min(3rem, 8.5vw);
+        }
+        .fashion__container {
+          padding-inline: 1rem;
+          gap: 3.5rem;
+        }
+        .dresses__container,
+        .sports__container {
+          grid-auto-rows: auto;
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+        .dresses__container .imgs {
+          width: 100%;
+          height: auto;
+          order: 0;
+        }
+        .dresses__container .imgs img {
+          max-width: 75%;
+        }
+        .dresses__container h1 {
+          font-size: min(4.1rem, 9.2vw) !important;
+        }
+        .sports__container p,
+        .dresses__container p {
+          font-size: min(1.3rem, 2.4vw);
+        }
+        .sports__container .content {
+          margin-top: 3.5rem;
+        }
+        .dresses__container .content .links,
+        .sports__container .content .links {
+          margin: 36px 0;
+        }
+        .dresses__container .content .links a,
+        .sports__container .content .links a {
+          padding: 0.5rem 0.7rem;
+          margin-inline: 5px 0;
+          font-size: min(1.3rem, 2.5vw);
+        }
+        .sports__container .content > a,
+        .dresses__container .content > a {
+          font-size: min(1.3rem, 3.2vw);
+          margin-left: 5px;
+          gap: 5px;
+        }
+        .section {
+          padding-block: 2rem;
+        }
+      }
+    </style>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>3D</title>
   </head>
@@ -420,5 +489,14 @@
       </div>
     </footer>
     <script src="../../js/main.js"></script>
+    <script>
+      if (document.body.clientWidth < 1024) {
+        let imgs = document.querySelector(".sports__container .imgs");
+        imgs.innerHTML = `<img
+                src="../../img/3D/Sport/special.png"
+                alt="forward"
+              />`;
+      }
+    </script>
   </body>
 </html>

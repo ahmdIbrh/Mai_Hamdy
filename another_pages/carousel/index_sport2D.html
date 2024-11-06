@@ -70,6 +70,40 @@
       .carousel-item.active {
         background-color: #dedede;
       }
+      @media screen and (max-width: 1024px) {
+        .section__title {
+          font-size: min(3rem, 9vw);
+          margin: 6rem 0 4rem 0;
+        }
+        .arr div {
+          width: 20px;
+          height: 20px;
+          border-top: 3.5px solid #dedede;
+          border-left: 3.5px solid #dedede;
+          top: 236px;
+        }
+        .arr.left div {
+          left: 120px;
+        }
+        .arr.right {
+          right: 144px !important;
+        }
+        .carousel {
+          width: 100vw;
+          height: 414px;
+        }
+        .carousel .carousel-item img {
+          max-width: 100%;
+          height: auto;
+        }
+        .carousel .carousel-item {
+          width: 100%;
+        }
+        .carousel .carousel-item img {
+          width: 90% !important;
+          margin-top: 25%;
+        }
+      }
     </style>
     <title>Carousel</title>
   </head>
