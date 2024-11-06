@@ -39,18 +39,44 @@ ScrollReveal().reveal(".sports__container .imgs img", {
 
 let navMenu = document.querySelector("#nav-menu");
 let navToggle = document.querySelector("#nav-toggle");
-let navClose = document.querySelector("#nav-close");
+let navClose = document.querySelector(".close");
 
 if (navToggle) {
   navToggle.addEventListener("click", () => {
+    console.log("Ahmed");
     navMenu.classList.add("show-menu");
+    let newEl = document.createElement("div");
+    newEl.classList.add("close");
+    navToggle.after(newEl);
+    navToggle.style.display = "none";
+    let navClose = document.querySelector(".close");
+    if (navClose) {
+      console.log("hahaha موجود");
+      navClose.addEventListener("click", () => {
+        console.log("hahaha  2موجود");
+        navMenu.classList.remove("show-menu");
+        navToggle.style.display = "block";
+        navClose.remove();
+      });
+    }
   });
 }
+console.log(document.querySelector(".close"));
 if (navClose) {
+  console.log("hahaha موجود");
   navClose.addEventListener("click", () => {
+    console.log("hahaha  2موجود");
     navMenu.classList.remove("show-menu");
+    navToggle.style.display = "block";
+    document.body.remove(document.querySelector(".close"));
   });
 }
+// navToggle.classList.remove("close");
+// if (navMenu.classList.contains("show-menu")) {
+//   document.addEventListener("click", function () {
+//     navMenu.classList.remove("show-menu");
+//   });
+// }
 
 /*=============== Remove Menu ===============*/
 
@@ -60,6 +86,9 @@ const linkAction = () => {
   const navMenu = document.querySelector("#nav-menu");
   // when you click on each link from nav remove show-menu class
   navMenu.classList.remove("show-menu");
+  let navClose = document.querySelector(".close");
+  navClose.remove("close");
+  navToggle.style.display = "block";
 };
 
 navLinks.forEach((n) => n.addEventListener("click", linkAction));
