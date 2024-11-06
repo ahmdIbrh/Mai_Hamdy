@@ -51,9 +51,7 @@ if (navToggle) {
     navToggle.style.display = "none";
     let navClose = document.querySelector(".close");
     if (navClose) {
-      console.log("hahaha موجود");
       navClose.addEventListener("click", () => {
-        console.log("hahaha  2موجود");
         navMenu.classList.remove("show-menu");
         navToggle.style.display = "block";
         navClose.remove();
@@ -63,9 +61,7 @@ if (navToggle) {
 }
 console.log(document.querySelector(".close"));
 if (navClose) {
-  console.log("hahaha موجود");
   navClose.addEventListener("click", () => {
-    console.log("hahaha  2موجود");
     navMenu.classList.remove("show-menu");
     navToggle.style.display = "block";
     document.body.remove(document.querySelector(".close"));
