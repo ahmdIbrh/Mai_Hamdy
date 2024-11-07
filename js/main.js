@@ -110,9 +110,27 @@ $(document).ready(function () {
   // }
 });
 
-if (document.body.clientWidth < 1500) {
+if (document.body.clientWidth < 1500 && document.body.clientWidth > 400) {
   let p = document.querySelector(".home__container .home__content p");
   p.innerHTML = `Welcome to my portfolio. You’re in the right place to discover
               unique<br />designs and explore my expertise in fashion. Dive in
               and find the<br />inspiration you’re looking for.`;
+} else if (document.body.clientWidth < 1020) {
+  let p = document.querySelector(".home__container .home__content p");
+  let p2 = document.querySelector(".about__container .about__content p");
+  p.innerHTML = `Welcome to my portfolio. You’re in the right place to discover
+              unique designs and explore my expertise in fashion. Dive in
+              and find the inspiration you’re looking for.`;
+  p2.innerHTML = `Hello! I'm <span>Mai Hamdi</span>, an
+              <span>innovative Fashion Designer</span> with over
+              <span>3 years</span> of experience in creating impactful designs.
+              Skilled 
+              in <span>Illustrator</span>, <span>Photoshop</span>, and
+              <span>CLO 3D</span>, I craft detailed design 
+              <span>illustrations</span> and <span>Tech Pack</span> Files. My
+              background includes <span>sportswear</span> design for
+              clients in <span>Saudi Arabia</span> and <span>Egypt</span>,
+              and freelancing for over <span>40</span> international
+              clients on <span>Mostaql</span> and 
+              <span>Khamsat</span>.`;
 }
