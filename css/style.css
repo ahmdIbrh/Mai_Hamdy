@@ -348,7 +348,7 @@ button {
 .home__container .home__content .home__title {
   margin-bottom: 1rem;
   font-family: "MonumentRegular", sans-serif;
-  font-size: min(9.53rem, 7.94vw);
+  font-size: var(--biggest-font-size);
   font-weight: bold;
   letter-spacing: -3.5px;
   line-height: 1.2;
@@ -429,6 +429,7 @@ button {
   }
   .home__container .home__content h1 {
     --biggest-font-size: min(6rem, 13vw);
+    letter-spacing: -0.5px;
   }
   .home__container .home__content p {
     font-size: min(1.3rem, 3vw);
