@@ -9,6 +9,18 @@
     /> -->
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="carousel_style.css" />
+    <style>
+      .carousel .carousel-item img {
+        height: auto;
+      }
+      .carousel .carousel-item:nth-child(17) img {
+        height: 100%;
+      }
+      .carousel .carousel-item:nth-child(14) img,
+      .carousel .carousel-item:nth-child(15) img {
+        height: 95%;
+      }
+    </style>
     <title>Carousel</title>
   </head>
   <body>
@@ -342,9 +354,61 @@
         </div>
       </div>
     </footer>
-    <script src="../../js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      let navMenu = document.querySelector("#nav-menu");
+      let navToggle = document.querySelector("#nav-toggle");
+      let navClose = document.querySelector(".close");
+
+      if (navToggle) {
+        navToggle.addEventListener("click", () => {
+          console.log("Ahmed");
+          navMenu.classList.add("show-menu");
+          let newEl = document.createElement("div");
+          newEl.classList.add("close");
+          navToggle.after(newEl);
+          navToggle.style.display = "none";
+          let navClose = document.querySelector(".close");
+          if (navClose) {
+            navClose.addEventListener("click", () => {
+              navMenu.classList.remove("show-menu");
+              navToggle.style.display = "block";
+              navClose.remove();
+            });
+          }
+        });
+      }
+      console.log(document.querySelector(".close"));
+      if (navClose) {
+        navClose.addEventListener("click", () => {
+          navMenu.classList.remove("show-menu");
+          navToggle.style.display = "block";
+          document.body.remove(document.querySelector(".close"));
+        });
+      }
+      // navToggle.classList.remove("close");
+      // if (navMenu.classList.contains("show-menu")) {
+      //   document.addEventListener("click", function () {
+      //     navMenu.classList.remove("show-menu");
+      //   });
+      // }
+
+      /*=============== Remove Menu ===============*/
+
+      const navLinks = document.querySelectorAll(".nav__link");
+
+      const linkAction = () => {
+        const navMenu = document.querySelector("#nav-menu");
+        // when you click on each link from nav remove show-menu class
+        navMenu.classList.remove("show-menu");
+        let navClose = document.querySelector(".close");
+        navClose.remove("close");
+        navToggle.style.display = "block";
+      };
+
+      navLinks.forEach((n) => n.addEventListener("click", linkAction));
+    </script>
     <script>
       $(document).ready(function () {
         $(".carousel").carousel({

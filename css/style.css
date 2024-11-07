@@ -1077,7 +1077,7 @@ footer.section {
 
 @media screen and (max-width: 1024px) {
   .footer__container {
-    gap: 0;
+    gap: 0.3rem;
     padding: 1.01rem 1rem;
   }
   .footer__container .footer__icons {
