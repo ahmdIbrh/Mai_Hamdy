@@ -109,3 +109,10 @@ $(document).ready(function () {
   //   setTimeout(autoplay, 4500);
   // }
 });
+
+if (document.body.clientWidth < 1500) {
+  let p = document.querySelector(".home__container .home__content p");
+  p.innerHTML = `Welcome to my portfolio. You’re in the right place to discover
+              unique<br />designs and explore my expertise in fashion. Dive in
+              and find the<br />inspiration you’re looking for.`;
+}

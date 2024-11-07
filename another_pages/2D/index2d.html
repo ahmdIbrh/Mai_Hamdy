@@ -5,6 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/style.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+      .dresses__container .imgs img {
+        width: min(679px, 35.36vw);
+      }
+      .childs__container .imgs {
+        width: 100%;
+      }
+      @media screen and (max-width: 1624px) {
+        .sports__container .imgs img {
+          width: min(793px, 41.3vw);
+        }
+        .fashion__container .section__title {
+          font-size: min(5rem, 4.1625vw);
+        }
+        .sports__container .section__title {
+          font-size: min(5rem, 3.9vw);
+        }
+        .childs__container .imgs {
+          width: 100%;
+        }
+        .dresses__container .imgs img {
+          width: min(679px, 35.36vw);
+        }
+      }
+      @media screen and (max-width: 1024px) {
+        .container .fashion__title {
+          font-size: min(3rem, 10vw);
+        }
+        .sports__container .imgs img {
+          position: static !important;
+          width: 100%;
+        }
+        .sports__container .imgs {
+          width: 100%;
+          height: auto;
+          padding: 2rem;
+        }
+        .sports__container h1,
+        .dresses__container h1,
+        .childs__container h1 {
+          font-size: min(3rem, 8.5vw) !important;
+        }
+        .sports__container h1 {
+          font-size: min(3rem, 8.5vw);
+        }
+        .fashion__container {
+          padding-inline: 1rem;
+          gap: 3.5rem;
+        }
+        .dresses__container,
+        .sports__container,
+        .childs__container {
+          grid-auto-rows: auto;
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+        .dresses__container .imgs,
+        .childs__container .imgs {
+          width: 100%;
+          height: auto;
+          order: 0;
+        }
+        .dresses__container .imgs {
+          padding: 1.5rem;
+        }
+        .dresses__container .imgs img {
+          width: 100%;
+          height: 100%;
+        }
+        .childs__container .imgs img {
+          max-width: 60%;
+        }
+        .childs__container .imgs img:first-child {
+          margin: 0.5rem -3rem 0 0;
+        }
+        .dresses__container h1 {
+          font-size: min(4.1rem, 9.2vw) !important;
+        }
+        .sports__container p,
+        .childs__container p,
+        .dresses__container p {
+          font-size: min(1.3rem, 2.4vw);
+        }
+        .sports__container .content {
+          margin-top: 3.5rem;
+        }
+        .dresses__container .content .links,
+        .childs__container .content .links,
+        .sports__container .content .links {
+          margin: 36px 0;
+        }
+        .childs__container .content .links a,
+        .dresses__container .content .links a,
+        .sports__container .content .links a {
+          padding: 0.5rem 0.7rem;
+          margin-inline: 5px 0;
+          font-size: min(1.3rem, 2.5vw);
+        }
+        .childs__container .content > a,
+        .sports__container .content > a,
+        .dresses__container .content > a {
+          font-size: min(1.3rem, 3.2vw);
+          margin-left: 5px;
+          gap: 5px;
+        }
+        .section {
+          padding-block: 2rem;
+        }
+      }
+    </style>
     <title>2D</title>
   </head>
 

@@ -55,5 +55,7 @@
   .btns .arr div {
     width: 20px;
     height: 20px;
+    border-top: 1.5px solid #dedede;
+    border-left: 1.5px solid #dedede;
   }
 }

@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/style.css" />
     <style>
+      @media screen and (max-width: 1624px) {
+        .sports__container .imgs img {
+          position: static !important;
+        }
+        .sports__container .imgs {
+          padding: 2rem;
+        }
+      }
       @media screen and (max-width: 1024px) {
         .container .fashion__title {
           font-size: min(3rem, 10vw);
@@ -490,7 +498,7 @@
     </footer>
     <script src="../../js/main.js"></script>
     <script>
-      if (document.body.clientWidth < 1024) {
+      if (document.body.clientWidth < 1804) {
         let imgs = document.querySelector(".sports__container .imgs");
         imgs.innerHTML = `<img
                 src="../../img/3D/Sport/special.png"
